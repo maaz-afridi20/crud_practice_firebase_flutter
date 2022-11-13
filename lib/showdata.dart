@@ -51,6 +51,7 @@ class _ShowDataState extends State<ShowData> {
                   ),
                   child: Card(
                     child: ExpansionTile(
+                      expandedAlignment: Alignment.centerLeft,
                       title: Text(
                         snapshot.data!.docs[index]['title'],
                       ),
