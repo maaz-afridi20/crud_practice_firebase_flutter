@@ -25,6 +25,7 @@ class _ShowDataState extends State<ShowData> {
         builder: (BuildContext context, AsyncSnapshot<QuerySnapshot> snapshot) {
           if (snapshot.hasData) {
             return ListView.builder(
+              keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
               itemCount: snapshot.data!.docs.length,
               itemBuilder: (BuildContext context, int index) {
                 return Dismissible(

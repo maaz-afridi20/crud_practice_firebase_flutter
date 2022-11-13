@@ -106,6 +106,7 @@ class _AddPageState extends State<AddPage> {
                             titleC.clear();
                             detailC.clear();
                             collectionC.clear();
+                            FocusScope.of(context).unfocus();
                           }
                         },
                         child: const Text(
