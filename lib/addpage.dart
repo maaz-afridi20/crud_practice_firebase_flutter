@@ -30,6 +30,7 @@ class _AddPageState extends State<AddPage> {
         ),
         body: SafeArea(
           child: SingleChildScrollView(
+            keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
             child: Center(
               child: Form(
                 key: formkey,
