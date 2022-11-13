@@ -1,5 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:crudpractice_own/database_services.dart';
+import 'package:crudpractice_own/edit_data.dart';
+import 'package:crudpractice_own/navigationss.dart';
 // import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
@@ -49,17 +51,29 @@ class _ShowDataState extends State<ShowData> {
                       ],
                     ),
                   ),
-                  child: Card(
-                    child: ExpansionTile(
-                      expandedAlignment: Alignment.centerLeft,
-                      title: Text(
-                        snapshot.data!.docs[index]['title'],
-                      ),
-                      children: [
-                        Text(
-                          snapshot.data!.docs[index]['detail'],
+                  child: InkWell(
+                    onDoubleTap: () {
+                      Navigationss.navigator(
+                        context,
+                        EditData(
+                          title: snapshot.data!.docs[index]['title'],
+                          detail: snapshot.data!.docs[index]['detail'],
+                          id: snapshot.data!.docs[index].id,
                         ),
-                      ],
+                      );
+                    },
+                    child: Card(
+                      child: ExpansionTile(
+                        expandedAlignment: Alignment.centerLeft,
+                        title: Text(
+                          snapshot.data!.docs[index]['title'],
+                        ),
+                        children: [
+                          Text(
+                            snapshot.data!.docs[index]['detail'],
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 );
