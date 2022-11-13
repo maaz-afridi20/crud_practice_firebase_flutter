@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "25018895118",
+    "project_id": "crud-practice-own",
+    "storage_bucket": "crud-practice-own.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:25018895118:android:e170039ebf8ca4c46ca55f",
+        "android_client_info": {
+          "package_name": "com.example.crudpractice_own"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "25018895118-8idfik5uu0o7rndgvnvs59dqsqs7dmc1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCc5ls14eNA9tSTP681hddIk1Kq_KZ4nZk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "25018895118-8idfik5uu0o7rndgvnvs59dqsqs7dmc1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
