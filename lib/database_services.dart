@@ -1,5 +1,4 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:fluttertoast/fluttertoast.dart';
 
 FirebaseFirestore myFirebaseFirestore = FirebaseFirestore.instance;
 
@@ -12,9 +11,7 @@ class DataBaseServices {
     }).whenComplete(() {
       print('Added Successfully');
     }).catchError((error, stackTrace) {
-      Fluttertoast.showToast(
-        msg: error.toString(),
-      );
+      print('Some Error Occured');
     });
   }
   //

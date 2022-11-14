@@ -1,4 +1,5 @@
 import 'package:crudpractice_own/addpage.dart';
+import 'package:crudpractice_own/emailpage.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
